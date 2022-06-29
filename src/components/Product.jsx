@@ -17,7 +17,9 @@ export default function Product() {
   useEffect(() => {
     const getProduct = async () => {
       setLoading(true);
-      const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+      const response = await fetch(
+        `https://api4286.s3.ap-south-1.amazonaws.com/products.json/${id}`
+      );
       setProduct(await response.json());
       setLoading(false);
     };
@@ -46,18 +48,17 @@ export default function Product() {
       <>
         <div className="col-md-6">
           <img
-            src={product.image}
+            src={product.filename}
             alt={product.title}
             height="400px"
             width="400px"
           />
         </div>
         <div className="col-md-6">
-          <h4 className="text-uppercase text-black-50"> {product.category} </h4>
+          <h4 className="text-uppercase text-black-50"> {product.type} </h4>
           <h1 className="display-5"> {product.title} </h1>
           <p className="lead fw-bolder">
-            Rating {product.rating && product.rating.rate}{" "}
-            <i className="fa fa-star"></i>{" "}
+            Rating {product.rating} <i className="fa fa-star"></i>{" "}
           </p>
           <h3 className="display-6 fw-bold my-4"> $ {product.price} </h3>
           <p className="lead"> {product.description} </p>

@@ -33,7 +33,7 @@ const Cart = () => {
             <div className="row justify-content-center">
               <div className="col-md-4">
                 <img
-                  src={product.image}
+                  src={product.filename}
                   alt={product.title}
                   height="200px"
                   width="180px"
