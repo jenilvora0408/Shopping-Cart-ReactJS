@@ -2,3 +2,31 @@
 .navbar-nav a{
     font-size: 17px;
 }
+
+/* Login */
+.form-control{
+    max-width: 35rem;
+}
+
+.form-label{
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form{
+    margin-top: 10rem;
+}
+
+/* Register */
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}

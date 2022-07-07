@@ -9,7 +9,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg bg-white py-3 shadow-sm">
         <div className="container">
           <NavLink className="navbar-brand fs-4" to="/">
-            Kabra Logitech
+            TatvaSoft - Sculpting Thoughts
           </NavLink>
           <button
             className="navbar-toggler"
